@@ -5,6 +5,7 @@ function MenuItemCard() {
     price: 7.5,
     available: true,
   };
+
   return (
     <article className="card menu-card">
       <div className="thumb" aria-hidden="true">

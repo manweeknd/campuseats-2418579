@@ -4,7 +4,13 @@ function VendorCard() {
     location: "Mahallah Ali, Block C",
     openHours: "7:00 am - 10:00 pm",
     isOpen: true,
+
+    name: "Kafe Zubair",
+    location: "Mahallah Zubair",
+    openHours: "7:00 am - 10:00 pm",
+    isOpen: true,
   };
+
   return (
     <article className="card vendor-card">
       <div className="thumb" aria-hidden="true">
