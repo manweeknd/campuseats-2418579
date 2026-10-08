@@ -3,7 +3,7 @@ import Header from "./Components/Header.jsx";
 import MenuList from "./Components/MenuList.jsx";
 import Footer from "./Components/Footer.jsx";
 function App() {
-  const selectedVendor = vendors[0];
+  const selectedVendor = vendors[1];
   return (
     <>
       <Header />
