@@ -1,21 +1,22 @@
-import React from "react";
-
-export default function MenuItemCard() {
+function MenuItemCard() {
   const item = {
-    name: "Apple Juice",
-    description: "Freshly blended ice apple juice",
+    name: "Nasi Lemak Ayam",
+    description: "Coconut rice, fried chicken, sambal, egg and peanuts",
     price: 7.5,
     available: true,
   };
-
   return (
-    <div className="menu-item-card">
+    <article className="card menu-card">
+      <div className="thumb" aria-hidden="true">
+        {item.name.charAt(0)}
+      </div>
       <h3>{item.name}</h3>
-      <p className="description">{item.description}</p>
+      <p className="muted">{item.description}</p>
       <p className="price">RM {item.price.toFixed(2)}</p>
       <button className="btn" disabled={!item.available}>
         {item.available ? "Add to cart" : "Sold out"}
       </button>
-    </div>
+    </article>
   );
 }
+export default MenuItemCard;

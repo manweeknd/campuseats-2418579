@@ -1,24 +1,24 @@
-import React from "react";
-
-export default function VendorCard() {
+function VendorCard() {
   const vendor = {
-    name: "Mahallah Zubair Drinks & Juice Stall",
-    location: "Mahallah Zubair Cafe",
-    openHours: "10:00 AM - 10:00 PM",
+    name: "Kafe Mahallah Ali",
+    location: "Mahallah Ali, Block C",
+    openHours: "7:00 am - 10:00 pm",
     isOpen: true,
   };
-
   return (
-    <div className="vendor-card">
-      <div className="avatar">{vendor.name.charAt(0)}</div>
-      <div className="vendor-info">
+    <article className="card vendor-card">
+      <div className="thumb" aria-hidden="true">
+        {vendor.name.charAt(0)}
+      </div>
+      <div>
         <h2>{vendor.name}</h2>
-        <p className="location">{vendor.location}</p>
-        <p className="hours">{vendor.openHours}</p>
-        <span className={`status ${vendor.isOpen ? "open" : "closed"}`}>
+        <p className="muted">{vendor.location}</p>
+        <p className="muted">Open: {vendor.openHours}</p>
+        <span className={vendor.isOpen ? "status open" : "status closed"}>
           {vendor.isOpen ? "Open now" : "Closed"}
         </span>
       </div>
-    </div>
+    </article>
   );
 }
+export default VendorCard;

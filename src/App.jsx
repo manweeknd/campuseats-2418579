@@ -1,21 +1,20 @@
-import React from "react";
 import Header from "./Components/Header";
 import VendorCard from "./Components/VendorCard";
 import MenuItemCard from "./Components/MenuItemCard";
 import Footer from "./Components/Footer";
 
-export default function App() {
+function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="container">
         <section>
-          <h2>Today’s vendors</h2>
+          <h2 className="section-title">Today's vendors</h2>
           <VendorCard />
         </section>
         <section>
-          <h2>Popular items</h2>
-          <div>
+          <h2 className="section-title">Popular items</h2>
+          <div className="grid">
             <MenuItemCard />
           </div>
         </section>
@@ -24,3 +23,4 @@ export default function App() {
     </>
   );
 }
+export default App;
