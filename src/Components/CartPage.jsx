@@ -1,7 +1,10 @@
+import { useCart } from "../hooks/useCart.js";
 import CartItem from "./CartItem.jsx";
 import CheckoutForm from "./CheckoutForm.jsx";
 
-function CartPage({ cart, onChangeQty, onRemove, onPlaceOrder }) {
+function CartPage() {
+  const { cart, changeQty, removeFromCart, placeOrder, total } = useCart();
+
   if (cart.length === 0) {
     return (
       <p className="muted">
@@ -9,8 +12,6 @@ function CartPage({ cart, onChangeQty, onRemove, onPlaceOrder }) {
       </p>
     );
   }
-
-  const total = cart.reduce((sum, line) => sum + line.item.price * line.qty, 0); // Derived with reduce, never stored in state[cite: 8]
 
   return (
     <div className="cart-layout">
@@ -20,14 +21,14 @@ function CartPage({ cart, onChangeQty, onRemove, onPlaceOrder }) {
             <CartItem
               key={line.item.id}
               line={line}
-              onChangeQty={onChangeQty}
-              onRemove={onRemove}
+              onChangeQty={changeQty}
+              onRemove={removeFromCart}
             />
           ))}
         </ul>
         <p className="cart-total">Total: RM {total.toFixed(2)}</p>
       </div>
-      <CheckoutForm onPlaceOrder={onPlaceOrder} />
+      <CheckoutForm onPlaceOrder={placeOrder} />
     </div>
   );
 }

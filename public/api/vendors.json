@@ -2,7 +2,7 @@
   {
     "id": "my-restaurant",
     "name": "Aiman's Cafe",
-    "location": "Mahallah Bilal",
+    "location": "Mahallah Zubair",
     "openHours": "7:00 am - 10:00 pm",
     "isOpen": true,
     "menu": [
@@ -10,7 +10,7 @@
         "id": "my-1",
         "name": "Nasi Ayam Goreng",
         "description": "Fried chicken with rice",
-        "price": 10.0,
+        "price": 7.0,
         "category": "Rice",
         "available": true
       },
@@ -18,29 +18,69 @@
         "id": "my-2",
         "name": "Nasi Ayam Penyet",
         "description": "Smashed fried chicken with sambal and rice",
-        "price": 9.0,
+        "price": 7.0,
         "category": "Rice",
         "available": true
       },
       {
         "id": "my-3",
+        "name": "Nasi Goreng Kampung",
+        "description": "Traditional village-style fried rice with anchovies and chili",
+        "price": 8.0,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "my-4",
+        "name": "Mee Goreng Mamak",
+        "description": "Spicy stir-fried yellow noodles with tofu, potatoes, and egg",
+        "price": 8.0,
+        "category": "Noodles",
+        "available": true
+      },
+      {
+        "id": "my-5",
+        "name": "Kuey Teow Goreng Kerang",
+        "description": "Wok-fried flat rice noodles with fresh cockles and chives",
+        "price": 9.5,
+        "category": "Noodles",
+        "available": true
+      },
+      {
+        "id": "my-6",
+        "name": "Teh Tarik Kaw",
+        "description": "Rich and frothy traditional pulled milk tea",
+        "price": 2.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "my-7",
+        "name": "Milo Dinosaur",
+        "description": "Iced Milo topped with a generous mound of Milo powder",
+        "price": 4.5,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "my-8",
         "name": "Cincau Ais",
-        "description": "Cold grassjelly with syrup",
+        "description": "Cold grass jelly with palm sugar syrup",
         "price": 2.5,
         "category": "Drinks",
-        "available": false
+        "available": true
       }
     ]
   },
   {
-    "id": "kafe-aminah",
-    "name": "Kafe Mahallah Aminah",
-    "location": "Mahallah Aminah, Ground Floor",
+    "id": "kafe-asma",
+    "name": "Kafe Asma'",
+    "location": "Mahallah Aminah",
     "openHours": "8:00 am - 9:00 pm",
     "isOpen": true,
     "menu": [
       {
-        "id": "ami-1",
+        "id": "ka-1",
         "name": "Nasi Ayam Penyet",
         "description": "Smashed fried chicken with sambal and rice",
         "price": 9.0,
@@ -48,12 +88,133 @@
         "available": true
       },
       {
-        "id": "ami-2",
+        "id": "ka-2",
+        "name": "Nasi Lemak Ayam Berempah",
+        "description": "Fragrant coconut rice with spiced fried chicken, anchovies, peanuts, and egg",
+        "price": 9.5,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "ka-3",
+        "name": "Chicken Chop Rice",
+        "description": "Crispy deep-fried chicken chop served with black pepper sauce and fries",
+        "price": 13.0,
+        "category": "Western",
+        "available": false
+      },
+      {
+        "id": "ka-4",
+        "name": "Skewered Lamb Shoulder",
+        "description": "Tender grilled lamb shoulder with mint sauce and mashed potatoes",
+        "price": 25.0,
+        "category": "Western",
+        "available": true
+      },
+      {
+        "id": "ka-5",
+        "name": "Spaghetti Bolognese",
+        "description": "Pasta tossed in a rich minced beef tomato sauce with parmesan",
+        "price": 10.0,
+        "category": "Western",
+        "available": true
+      },
+      {
+        "id": "ka-6",
         "name": "Air Bandung",
-        "description": "Rose syrup with milk",
+        "description": "Rose syrup with condensed and evaporated milk",
         "price": 3.0,
         "category": "Drinks",
         "available": true
+      },
+      {
+        "id": "ka-7",
+        "name": "Lemonade Ais",
+        "description": "Refreshing freshly squeezed iced lemon juice",
+        "price": 3.5,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "ka-8",
+        "name": "Barley Ice",
+        "description": "Traditional cooling boiled barley drink",
+        "price": 3.0,
+        "category": "Drinks",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "mph-bookstore",
+    "name": "MPH Bookstore",
+    "location": "Administrative Building, Concourse Level",
+    "openHours": "8:30 am - 6:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "mph-1",
+        "name": "Spiral Notebook (A4)",
+        "description": "200 pages, single line for lecture notes",
+        "price": 10.5,
+        "category": "Stationery",
+        "available": true
+      },
+      {
+        "id": "mph-2",
+        "name": "Gel Pen Set (Black/Blue/Red)",
+        "description": "Smooth 0.5mm quick-dry gel ink pens",
+        "price": 6.0,
+        "category": "Stationery",
+        "available": true
+      },
+      {
+        "id": "mph-3",
+        "name": "Highlighter Pastel Pack",
+        "description": "Set of 6 soft pastel aesthetic highlighters",
+        "price": 8.9,
+        "category": "Stationery",
+        "available": true
+      },
+      {
+        "id": "mph-4",
+        "name": "Introduction to Algorithms (Textbook)",
+        "description": "Standard reference book for computer science courses",
+        "price": 85.0,
+        "category": "Books",
+        "available": true
+      },
+      {
+        "id": "mph-5",
+        "name": "Pocket Quran & Translation",
+        "description": "Compact hardcover edition with English translation",
+        "price": 25.0,
+        "category": "Books",
+        "available": true
+      },
+      {
+        "id": "mph-6",
+        "name": "Campus Branded Hoodie",
+        "description": "Fleece-lined dark green hoodie with university emblem",
+        "price": 55.0,
+        "category": "Merchandise",
+        "available": true
+      },
+      {
+        "id": "mph-7",
+        "name": "Canvas Tote Bag",
+        "description": "Sturdy canvas bag for carrying laptops and books",
+        "price": 18.0,
+        "category": "Merchandise",
+        "available": true
+      },
+      {
+        "id": "mph-8",
+        "name": "Stainless Steel Tumbler",
+        "description": "Insulated 500ml water bottle keeps drinks cold or hot",
+        "price": 32.0,
+        "category": "Merchandise",
+        "available": false
       }
     ]
   }
