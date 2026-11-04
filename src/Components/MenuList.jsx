@@ -1,7 +1,9 @@
+// File: src/Components/MenuList.jsx
 import { useCart } from "../hooks/useCart.js";
 import MenuItemCard from "./MenuItemCard.jsx";
 
-function MenuList({ items }) {
+// MODIFIED: Added vendorId to props
+function MenuList({ items, vendorId }) {
   const { addToCart } = useCart();
 
   if (items.length === 0) {
@@ -10,7 +12,12 @@ function MenuList({ items }) {
   return (
     <div className="grid">
       {items.map((item) => (
-        <MenuItemCard key={item.id} item={item} onAdd={addToCart} />
+        <MenuItemCard
+          key={item.id}
+          item={item}
+          vendorId={vendorId} // ADDED: Pass vendorId
+          onAdd={addToCart}
+        />
       ))}
     </div>
   );

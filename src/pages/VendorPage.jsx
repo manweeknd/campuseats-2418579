@@ -23,7 +23,7 @@ export default function VendorPage() {
   return (
     <section>
       <h2 className="section-title">Menu: {vendor.name}</h2>
-      <MenuList items={vendor.menu} />
+      <MenuList items={vendor.menu} vendorId={vendor.id} />
     </section>
   );
 }
