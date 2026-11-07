@@ -1,4 +1,3 @@
-// File: src/Components/MenuList.jsx
 import { useCart } from "../hooks/useCart.js";
 import MenuItemCard from "./MenuItemCard.jsx";
 
@@ -15,7 +14,7 @@ function MenuList({ items, vendorId }) {
         <MenuItemCard
           key={item.id}
           item={item}
-          vendorId={vendorId} // ADDED: Pass vendorId
+          vendorId={vendorId} 
           onAdd={addToCart}
         />
       ))}
